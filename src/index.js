@@ -9,9 +9,9 @@ function component() {
   heading.innerHTML = _.join(["Hello", "webpack"], " ");
   heading.classList.add("hello");
 
-  Data.forEach((product) => {
+  Data.builtTools.forEach((buildTool) => {
     const element = document.createElement("p");
-    element.innerHTML = product.name;
+    element.innerHTML = buildTool;
     content.appendChild(element);
   });
 
