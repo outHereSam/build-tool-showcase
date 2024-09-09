@@ -1,13 +1,21 @@
 import * as _ from "lodash";
 import "./style.sass";
+import Data from "./data.json";
 
 function component() {
-  const element = document.createElement("div");
+  const heading = document.createElement("h1");
+  const content = document.createElement("div");
 
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
-  element.classList.add("hello");
+  heading.innerHTML = _.join(["Hello", "webpack"], " ");
+  heading.classList.add("hello");
 
-  return element;
+  Data.forEach((product) => {
+    const element = document.createElement("p");
+    element.innerHTML = product.name;
+    content.appendChild(element);
+  });
+
+  return content;
 }
 
 document.body.appendChild(component());
