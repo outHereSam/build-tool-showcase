@@ -6,8 +6,8 @@ A small web application that demonstrates the use of various build tools and pac
 
 - Clone this repository using git clone
 - Navigate into the directory of the project and run `npm install`. This should install all the dependencies for the project.
+- To build the project with webpack, use `npm run build` command. This will build the app and create a dist directory with the output
 - To run the development server, run `npm start`. This automatically opens the project in the browser and watches for changes.
-- To build the project with webpack, use `npm run build` command.
 
 ## Available npm scripts
 
