@@ -1,21 +1,26 @@
 import * as _ from "lodash";
 import "./style.sass";
-import Data from "./data.json";
+import buildTools from "./data.json";
 
-function component() {
-  const heading = document.createElement("h1");
-  const content = document.createElement("div");
+const title = document.querySelector(".title");
+title.innerHTML = _.join(["Build", "Tools"], " ");
 
-  heading.innerHTML = _.join(["Hello", "webpack"], " ");
-  heading.classList.add("hello");
+const mainContent = document.getElementById("mainContent");
 
-  Data.builtTools.forEach((buildTool) => {
-    const element = document.createElement("p");
-    element.innerHTML = buildTool;
-    content.appendChild(element);
+function buildToolsListComponent() {
+  buildTools.forEach((buildTool) => {
+    const element = document.createElement("div");
+    const img = document.createElement("img");
+    img.src = require(`./images/${buildTool.image}`);
+    img.alt = buildTool.name;
+
+    const name = document.createElement("h4");
+    name.textContent = buildTool.name;
+
+    element.appendChild(img);
+    element.appendChild(name);
+    mainContent.appendChild(element);
   });
-
-  return content;
 }
 
-document.body.appendChild(component());
+buildToolsListComponent();

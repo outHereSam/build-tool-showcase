@@ -1,3 +1,26 @@
-{
-  "builtTools": ["Webpack", "Gulp", "Parcel", "Vite", "Rollup", "Grunt"]
-}
+[
+  {
+    "name": "Webpack",
+    "image": "webpack.svg"
+  },
+  {
+    "name": "Vite",
+    "image": "vite.svg"
+  },
+  {
+    "name": "Parcel",
+    "image": "parcel.png"
+  },
+  {
+    "name": "Rollup",
+    "image": "rollup.jpg"
+  },
+  {
+    "name": "Grunt",
+    "image": "grunt.svg"
+  },
+  {
+    "name": "Gulp",
+    "image": "gulp.svg"
+  }
+]
