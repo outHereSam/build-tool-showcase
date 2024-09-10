@@ -3,7 +3,7 @@ import "./style.sass";
 import buildTools from "./data.json";
 
 const title = document.querySelector(".title");
-title.innerHTML = _.join(["Build", "Tools"], " ");
+title.innerHTML = _.join(["Build", "Tools"], " "); // Using loadash to generate the title
 
 const mainContent = document.getElementById("mainContent");
 
@@ -11,6 +11,7 @@ function buildToolsListComponent() {
   buildTools.forEach((buildTool) => {
     const element = document.createElement("div");
     const img = document.createElement("img");
+    // eslint-disable-next-line no-undef
     img.src = require(`./images/${buildTool.image}`);
     img.alt = buildTool.name;
 
