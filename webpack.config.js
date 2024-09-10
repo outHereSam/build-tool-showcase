@@ -36,7 +36,7 @@ export const module = {
     },
   ],
 };
-export const mode = "development";
+export const mode = "production";
 export const devtool = "source-map";
 export const devServer = {
   static: "./dist",
