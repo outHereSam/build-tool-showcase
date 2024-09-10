@@ -6,7 +6,7 @@
     "test": "jest",
     "watch": "webpack --watch",
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js --output public"
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",

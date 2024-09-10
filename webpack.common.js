@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 // Import the necessary modules using CommonJS `require`
-// eslint-disable-next-line no-undef
+
 const path = require("path");
 
 module.exports = {
